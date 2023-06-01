@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>My Flask App</title>
+</head>
+<body>
+    <h1>Enter some text:</h1>
+    <form method="POST">
+        <input type="text" name="user_input">
+        <input type="submit" value="Submit">
+    </form>
+    {% if result %}
+        <h2>You entered: {{ user_input }}</h2>
+        <h2>Processed result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
